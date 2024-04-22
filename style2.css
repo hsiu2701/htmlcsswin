@@ -1,0 +1,420 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.wrap {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+  width: 1920px;
+}
+/* 社群 */
+.topbar {
+  background-color: #f6f6f8;
+  height: 32px;
+  padding: 8px 405px 8px 0px;
+}
+
+.topbar ul {
+  display: flex;
+  justify-content: right;
+}
+
+.topbar-text1 {
+  display: block;
+  color: #4267b2;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+.topbar-text1 img {
+  margin-right: 4px;
+  border-radius: 8px;
+}
+.topbar-text2 {
+  display: block;
+  color: #1da1f2;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.topbar-text2 img {
+  border-left: 1px solid #cccccc;
+  padding-left: 12px;
+  margin-right: 4px;
+}
+
+.topbar ul li a:hover {
+  color: #29282e;
+}
+/* 表頭 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffff;
+  padding: 18px 417px 18px 404px;
+}
+.header h1 a {
+  display: block;
+  width: 224px;
+  height: 50px;
+  background-image: url(../HTML作業圖檔/最終作業_images/logo.png);
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.header ul li a {
+  padding: 8px 0px 8px 0px;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 24px;
+  color: #00251a;
+}
+
+.header ul li a:hover {
+  color: rgb(82, 144, 160);
+  border-bottom: #00251a solid 1px;
+  transition: 0.3s;
+}
+/* 標題 */
+.title {
+  height: 390px;
+  background: url(../HTML作業圖檔/最終作業_images/banner.png) no-repeat;
+  background-size: cover;
+}
+.title h1 {
+  padding: 152px 0px 0px 498px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffff;
+  line-height: 43.2px;
+}
+/* 課程介紹 */
+.content-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.content-item {
+  width: 350px;
+  height: 353px;
+  border: solid 1px#1231;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px #a39999;
+  transition: 0.3s;
+  translate: 0 10px;
+}
+.content-item:hover {
+  translate: 0 0;
+  box-shadow: 0px 3px 10px rgb(6, 107, 138);
+}
+.content-item .content-text h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.content-item .content-text p {
+  width: 310px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0px 20px 20px 20px;
+}
+.content-picture {
+  margin-top: 25px;
+}
+
+.content-list {
+  width: 310px;
+}
+.content-list {
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.content-item .content-list h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.content-item .content-list p {
+  line-height: 24px;
+  font-weight: 400;
+}
+.content-item .content-list ul {
+  margin: 0px 20px 0px 20px;
+}
+.content-item .content-list ul li {
+  list-style: disc;
+}
+/* 分析列表 */
+.Course-list h2 {
+  margin: 60px 0px 30px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: center;
+}
+.Course-list table {
+  margin: 0 auto;
+  width: 920px;
+  margin-bottom: 60px;
+}
+.Course-list table tr {
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  border-collapse: collapse;
+}
+.Course-list th,
+.Course-list td {
+  padding: 6px 0px 6px 10px;
+  text-align: left;
+}
+.Course-list th {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+.Course-list td {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.Course-list .text-style {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #00cc99;
+}
+/* 意見欄 */
+.Course-form {
+  background: linear-gradient(to bottom, #e4fff8 0%, #a2ddce 100%);
+  margin: 0 auto;
+  padding-bottom: 36px;
+}
+.Course-form h3 {
+  padding: 36px 0px 28px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: center;
+}
+.form-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.formbox1 {
+  display: flex;
+  flex-direction: column;
+}
+.formbox1 label {
+  color: #00251a;
+  font-size: 16px;
+  line-height: 19.2px;
+  padding: 5px;
+}
+.formbox1 input {
+  width: 351px;
+  height: 38px;
+  border-radius: 3px;
+  border: 1px #aaaaaa solid;
+}
+
+.formbox2 h4 {
+  font-size: 16px;
+  line-height: 19.2px;
+  padding-bottom: 3px;
+}
+
+.formbox2 textarea {
+  width: 350px;
+  height: 200px;
+  border-radius: 3px;
+  border: 1px #aaaaaa solid;
+}
+
+.form-btn button {
+  display: block;
+  background-color: #00251a;
+  color: #ffffff;
+  border: 1px #00251a solid;
+  padding: 10px 64px 10px 64px;
+  margin: 0 auto;
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.form-btn button:hover {
+  box-shadow: 2px 1px 5px #65636b;
+  background-color: #011b14;
+  transition: 0.2s;
+}
+
+/* 表尾 */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 405px 22px 405px;
+}
+.footer-text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.footer-text a {
+  display: inline-block;
+  color: #00cc99;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
