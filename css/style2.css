@@ -146,25 +146,25 @@ table {
   justify-content: right;
 }
 
-.topbar-text1 {
+.topbar-picture {
   display: block;
   color: #4267b2;
   margin-right: 12px;
   text-decoration: none;
 }
 
-.topbar-text1 img {
+.topbar-picture img {
   margin-right: 4px;
   border-radius: 8px;
 }
-.topbar-text2 {
+.topbar-picture2 {
   display: block;
   color: #1da1f2;
   line-height: 16px;
   text-decoration: none;
 }
 
-.topbar-text2 img {
+.topbar-picture2 img {
   border-left: 1px solid #cccccc;
   padding-left: 12px;
   margin-right: 4px;
@@ -180,7 +180,7 @@ table {
   background-color: #ffff;
   padding: 18px 417px 18px 404px;
 }
-.header h1 a {
+.header h2 a {
   display: block;
   width: 224px;
   height: 50px;
@@ -215,13 +215,26 @@ table {
   height: 390px;
   background: url(../HTML作業圖檔/最終作業_images/banner.png) no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.title-box {
+  width: 1920px;
+  height: 140px;
+  background-color: rgba(255, 255, 255, 0.178);
+  position: absolute;
+  top: 125px;
+  z-index: 1;
 }
 .title h1 {
-  padding: 152px 0px 0px 498px;
   font-size: 36px;
   font-weight: 700;
   color: #ffff;
   line-height: 43.2px;
+  position: absolute;
+  left: 498px;
+  top: 152px;
+  z-index: 6;
 }
 /* 課程介紹 */
 .content-box {
@@ -232,7 +245,6 @@ table {
 
 .content-item {
   width: 350px;
-  height: 353px;
   border: solid 1px#1231;
   margin-top: 60px;
   display: flex;
@@ -325,7 +337,7 @@ table {
   font-weight: 400;
   line-height: 24px;
 }
-.Course-list .text-style {
+.Course-list .Course-style {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -350,30 +362,30 @@ table {
   gap: 30px;
 }
 
-.formbox1 {
+.form-contac {
   display: flex;
   flex-direction: column;
 }
-.formbox1 label {
+.form-contac label {
   color: #00251a;
   font-size: 16px;
   line-height: 19.2px;
   padding: 5px;
 }
-.formbox1 input {
+.form-contac input {
   width: 351px;
   height: 38px;
   border-radius: 3px;
   border: 1px #aaaaaa solid;
 }
 
-.formbox2 h4 {
+.form-remark h4 {
   font-size: 16px;
   line-height: 19.2px;
   padding-bottom: 3px;
 }
 
-.formbox2 textarea {
+.form-remark textarea {
   width: 350px;
   height: 200px;
   border-radius: 3px;
@@ -406,12 +418,12 @@ table {
   justify-content: space-between;
   padding: 22px 405px 22px 405px;
 }
-.footer-text p {
+.footer-contac p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 }
-.footer-text a {
+.footer-contac a {
   display: inline-block;
   color: #00cc99;
   font-size: 16px;
